@@ -1,0 +1,48 @@
+programa
+{
+    funcao inicio()
+    {
+//ESCOLA	ESTADUAL	DE	EDUCACAO	PROFISSIONAL	OTILIA	CORREIA	SARAIVA
+    //Barbalha,	Ceara	.	CREDE	19	.	Curso	Tecnico	em	Informatica
+    //Disciplina	...:	Logica	de	Programacao
+    //Professor	....: Willy Brandt
+    //Estudante	....: Josimar Saraiva de Lima Neto
+    //Turma	........:	1	INF														Data:	29	/	10	/	2026
+    //Atividade	....:	Sete	atividades	de	repeticao	e	decisao
+    //Questao	......: Quinta questão
+    //Objetivo	.....: Criar um algoritmo responsável por registrar as temperaturas obtidas por estudantes ao decorrer da quantidade de dias escolhidos e informar qual a maior e menor temperatura e qual a quantidade de dias que tiveram uma temperatura maior que 32.
+    //dificuldade.....: Não consegui realizar essa atividade sem o uso de inteligência artificial, porém usei apenas para tirar dúvidas e não consegui corrigir o erro do "acima" que não conta os números corretamente.
+        real temperatura, maior, menor
+        inteiro i, acima = 0, quantidade
+
+        escreva("Qual a quantidade de dias que serão verificados? ")
+        leia(quantidade)
+
+        para (i = 1; i <= quantidade; i++){
+            escreva("Qual a temperatura do dia ", i, "? ")
+            leia(temperatura)
+
+            se (i == 1){
+                maior = temperatura
+                menor = temperatura
+            }
+            senao {
+                se (temperatura > maior){
+                    maior = temperatura
+                }
+
+                se (temperatura < menor){
+                    menor = temperatura
+                }
+
+                se (temperatura >= 33){
+                    acima = acima + 1
+                }
+            }
+        }
+
+        escreva("A maior temperatura registrada foi: ", maior, "\n")
+        escreva("A menor temperatura registrada foi: ", menor, "\n")
+        escreva("A quantidade de dias com temperaturas acima de 32 registrados foi: ", acima, "\n")
+    }
+}
