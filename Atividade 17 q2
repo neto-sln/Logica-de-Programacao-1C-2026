@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+    //ESCOLA	ESTADUAL	DE	EDUCACAO	PROFISSIONAL	OTILIA	CORREIA	SARAIVA
+    //Barbalha,	Ceara	.	CREDE	19	.	Curso	Tecnico	em	Informatica
+    //Disciplina	...:	Logica	de	Programacao
+    //Professor	....: Willy Brandt
+    //Estudante	....: Josimar Saraiva de Lima Neto
+    //Turma	........:	1	INF														Data:	29	/	10	/	2026
+    //Atividade	....:	Sete	atividades	de	repeticao	e	decisao
+    //Questao	......: Segunda questão
+    //Objetivo	.....: Um algoritmo que lê qual o número da tabuada que o sétimo ano vai aprender e informa qual o resultado da multiplicação até o dez
+     inteiro numero, i, resultado
+        escreva("De qual número o sétimo ano vai aprender a tabuada?")
+        leia(numero)
+        para (i = 1; i <= 10; i++){
+            resultado = numero * 1
+            escreva(numero, "x", i, " = ", resultado)
+        }
+  }
+}
