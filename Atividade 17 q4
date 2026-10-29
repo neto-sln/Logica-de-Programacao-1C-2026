@@ -1,0 +1,34 @@
+programa {
+  funcao inicio() {
+    //ESCOLA	ESTADUAL	DE	EDUCACAO	PROFISSIONAL	OTILIA	CORREIA	SARAIVA
+    //Barbalha,	Ceara	.	CREDE	19	.	Curso	Tecnico	em	Informatica
+    //Disciplina	...:	Logica	de	Programacao
+    //Professor	....: Willy Brandt
+    //Estudante	....: Josimar Saraiva de Lima Neto
+    //Turma	........:	1	INF														Data:	29	/	10	/	2026
+    //Atividade	....:	Sete	atividades	de	repeticao	e	decisao
+    //Questao	......: Quarta questão
+    //Objetivo	.....: Um programa que pergunta quantos alunos estão sendo avaliados em uma prova e suas notas e informa a media da turma, quantos foram aprovados e se a turma bateu a meta.
+    inteiro quantidade, i, aprovados = 0
+    real soma = 0, media, nota
+    escreva ("Quantos alunos estão sendo avaliados? ")
+    leia (quantidade)
+    para (i = 1; i <= quantidade; i++){
+        escreva ("Nota do aluno ", i, ": ")
+        leia (nota)
+        soma = soma + nota
+        se (nota >= 6){
+            aprovados = aprovados + 1
+        }
+    }
+    media = soma / quantidade
+    se (media >= 6){
+      escreva ("A turma conseguiu alcançar a meta.")
+    }
+    senao{
+      escreva ("A turma não atingiu a meta.")
+    }
+    escreva ("A média da turma é, ", media, "\n")
+    escreva ("A quantidade de aprovados é, ", aprovados, " ")
+  }
+}
