@@ -1,0 +1,37 @@
+programa
+{
+    funcao inicio ()
+    {
+    //ESCOLA	ESTADUAL	DE	EDUCACAO	PROFISSIONAL	OTILIA	CORREIA	SARAIVA
+    //Barbalha,	Ceara	.	CREDE	19	.	Curso	Tecnico	em	Informatica
+    //Disciplina	...:	Logica	de	Programacao
+    //Professor	....: Willy Brandt
+    //Estudante	....: Josimar Saraiva de Lima Neto
+    //Turma	........:	1	INF														Data:	29	/	10	/	2026
+    //Atividade	....:	Sete	atividades	de	repeticao	e	decisao
+    //Questao	......: Sexta questão
+    //Objetivo	.....: Criar um algoritmo que calculasse a media de 4 notas de 8 alunos e também a media geral dos alunos.
+    //Dificuldades .....: Igualmente a quinta eu precisei udar a ia, a principal dificuldade foi na construção de dois laços.
+        real media, nota, mediageral, somageral = 0, soma
+        inteiro i, estudantes, quantidadenotas = 0, n
+
+        escreva ("Quantos estudantes é necessário o boletim? ")
+        leia (estudantes)
+        escreva ("Qual a quantidade de notas? ")
+        leia (quantidadenotas)
+
+        para (i = 1; i <= estudantes; i++){
+            soma = 0
+            para (n = 1; n <= quantidadenotas; n++){
+                escreva ("Qual a ", n, "° nota do aluno? ")
+                leia (nota)
+                soma = soma + nota
+            }
+            media = soma / quantidadenotas
+            escreva ("A média do estudante é igual à ", media, ".\n")
+            somageral = somageral + media
+            mediageral = somageral / estudantes
+        }
+        escreva ("A média geral dos estudantes é ", mediageral, ".")
+    }
+}
