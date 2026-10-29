@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    //ESCOLA	ESTADUAL	DE	EDUCACAO	PROFISSIONAL	OTILIA	CORREIA	SARAIVA
+    //Barbalha,	Ceara	.	CREDE	19	.	Curso	Tecnico	em	Informatica
+    //Disciplina	...:	Logica	de	Programacao
+    //Professor	....: Willy Brandt
+    //Estudante	....: Josimar Saraiva de Lima Neto
+    //Turma	........:	1	INF														Data:	29	/	10	/	2026
+    //Atividade	....:	Sete	atividades	de	repeticao	e	decisao
+    //Questao	......: Primeira questão
+    //Objetivo	.....: Um algoritimo responsável por dizer os estudantes que estão presentes
+    inteiro i, quantidade
+    escreva ("Quantos alunos estão presentes hoje? ")
+    leia (quantidade)
+    para (i = 1; i <= quantidade; i++){
+      escreva ("Estudante ", i, " está presente.\n")
+    }
+  }
+}
