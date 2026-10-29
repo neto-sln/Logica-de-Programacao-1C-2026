@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    //ESCOLA	ESTADUAL	DE	EDUCACAO	PROFISSIONAL	OTILIA	CORREIA	SARAIVA
+    //Barbalha,	Ceara	.	CREDE	19	.	Curso	Tecnico	em	Informatica
+    //Disciplina	...:	Logica	de	Programacao
+    //Professor	....: Willy Brandt
+    //Estudante	....: Josimar Saraiva de Lima Neto
+    //Turma	........:	1	INF														Data:	29	/	10	/	2026
+    //Atividade	....:	Sete	atividades	de	repeticao	e	decisao
+    //Questao	......: Terceira questão
+    //Objetivo	.....: Um algoritimo que pergunta até qual número o usuário quer verificar quais são pares, ele informa quais são os números pares e qual o resultado da soma de todos eles
+    inteiro i, soma=0, quantidade
+    escreva ("Quantos números vamos verificar? ")
+    leia (quantidade)
+    para (i = 1; i <= quantidade; i++){
+        se (i % 2 == 0){
+            escreva (i, "\n")
+            soma = soma + i
+        }
+    }
+    escreva ("Soma = ", soma, " ")
+  }
+}
