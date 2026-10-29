@@ -1,0 +1,56 @@
+programa
+{
+    funcao inicio ()
+    {
+    //ESCOLA	ESTADUAL	DE	EDUCACAO	PROFISSIONAL	OTILIA	CORREIA	SARAIVA
+    //Barbalha,	Ceara	.	CREDE	19	.	Curso	Tecnico	em	Informatica
+    //Disciplina	...:	Logica	de	Programacao
+    //Professor	....: Willy Brandt
+    //Estudante	....: Josimar Saraiva de Lima Neto
+    //Turma	........:	1	INF														Data:	29	/	10	/	2026
+    //Atividade	....:	Sete	atividades	de	repeticao	e	decisao
+    //Questao	......: Sétima questão
+    //Objetivo	.....: Criar um algoritmo que calcule quanto uma cantina da escola vende com 4 códigos, no final deve mostrar ticket médio, vendas válidas e valor arrecadado.
+        inteiro codigo, quantidade, valescomprados = 0
+        real total = 0, ticket
+
+        escreva ("Qual o código do produto (1-suco, 2-sanduiche, 3-bolo, 0-sair)")
+        leia (codigo)
+
+        enquanto (codigo != 0){
+            se (codigo >= 1 e codigo <= 3){
+                escreva ("Qual a quantidade? ")
+                leia (quantidade)
+
+                se (codigo == 1){
+                    total = total + (quantidade * 3.50)
+                }
+
+                se (codigo == 2){
+                    total = total + (quantidade * 5.50)
+                }
+
+                se (codigo == 3){
+                    total = total + (quantidade * 2.00)
+                }
+
+                valescomprados = valescomprados + 1
+            }
+
+            senao {
+                escreva ("Código inválido, tente novamente")
+            }
+        }
+
+        escreva ("Digite o código do produto ")
+        leia (codigo)
+
+        escreva ("Vendas válidas realizadas foram: ", valescomprados, "\n")
+        escreva ("O total arrecadado foi: ", total, "\n")
+
+        se (valescomprados > 0){
+            ticket = total / valescomprados
+            escreva ("O ticket médio foi: ", ticket, "\n")
+        }
+    }
+}
